@@ -1,6 +1,17 @@
-//Math.random to get random returned value
-//Create variable for the returned value
-//if-else statement to return "rock", "paper", or "scissors" based on returned value
+//Declare getComputerAnswer function to get CPU answer
+//Define computerValue variable for the returned value
+//Code if-else statement to return "rock", "paper", or "scissors" based on returned value
+//Declare getUserAnswer function to get User answer
+//Define userInput variable for User input
+//Use prompt() to get value from user
+//Use toLowerCase() to ensure every entered input will return lowercase to avoid case sensitivity problems
+//Assign getComputerAnswer() and getUserAnswer() to computerAnswer and userAnswer variables
+//Define userScore and computerScore variables to get the scores of each player
+//Define currentRound variable to keep track of game rounds
+//Declare playRound function with if-else statements to determine the outcomes of each round by incrementing the userScore or computerScore based on the given value, incrementing the round, and returning an alert message based on the result.
+//Declare playGame function and nest userScore, computerScore, and currentRound variables, and the playRound() function inside
+//Create do-while loop inside of playGame() function in order to have the game run for 5 rounds and stops after that
+//Create if-else statement to output game results based on if the userScore or computerScore reaches 3 or more.
 
 function getComputerAnswer() {
 let computerValue = Math.floor(Math.random() * 3);
@@ -73,21 +84,3 @@ let currentRound = 0
 }
 
 console.log(playGame())
-
-// function capitalize(string) {
-//    if (string.length === 0) {
-//       return "";
-//    }
-//    const firstLetter = string[0].toUpperCase();
-//    const remainingLetters = string.slice(1).toLowerCase();
-//    return firstLetter + remainingLetters;
-//}
-
-
-//function lastLetter(string) {
-//    const lastIndex = string.length - 1;
-//    const finalLetter = string[lastIndex];
-//    return finalLetter;
-//}
-
-//console.log(lastLetter("beach"))
