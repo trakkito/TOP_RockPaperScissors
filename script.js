@@ -96,7 +96,7 @@ let computerScore = 0
         };
 };
 
-initializeGame = () => {
+startGame = () => {
     userScore = 0;
     computerScore = 0;
     rock.disabled = false;
@@ -107,5 +107,4 @@ initializeGame = () => {
     playerScore.textContent = "Player Score: 0";
 }
 
-initializeGame();
-
+startGame();
